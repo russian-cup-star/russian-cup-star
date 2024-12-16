@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Покупка Билетов</title>
+    <link rel="stylesheet" href="x_bilety.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="red_header">
+        <div class="Logo">
+            <img src="kartinki/Logo_sorev.png" class="Logo2" onclick="window.location.href='index.html';" />
+        </div>
+        <div class="text_shapka">
+            <p class="nazvanie" onclick="window.location.href='index.html';">Кубок Звёзд Российского футбола</p>
+            <div class="zagolovki">
+                <button onclick="window.location.href='index_o_meropriyatii.html';">О мероприятии</button>
+                <button onclick="window.location.href='index_sostavy.html';">Составы команд</button>
+                <button onclick="window.location.href='index_bilety.html';">Купить билеты</button>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="zakaz">
+            <div class="zakaz-header">Заказ Билетов</div>
+            <div class="zakaz-content">
+                <div class="section">
+                    <div class="zakaz_text">Трибунa:</div>
+                    <div class="tribune" onclick="selectTribune('C-Северная',0)">C-Северная</div>
+                    <div class="tribune" onclick="selectTribune('D-Восточная',0)">D-Восточная</div>
+                    <div class="tribune" onclick="selectTribune('A-Южная',0)">A-Южная</div>
+                    <div class="tribune" onclick="selectTribune('D-Западная',0)">D-Западная</div>
+                </div>
+
+                <div class="section">
+                    <div class="zakaz_text">Этаж:</div>
+                    <div class="floor" onclick="selectFloor('1 этаж')">1</div>
+                    <div class="floor" onclick="selectFloor('2 этаж')">2</div>
+                </div>
+
+                <div class="section">
+                    <div class="zakaz_text">Статус:</div>
+                    <div class="status" onclick="selectStatus('VIP', 23000)">VIP(23 тыс руб)</div>
+                    <div class="status" onclick="selectStatus('Gold', 16000)">Gold(16 тыс руб)</div>
+                    <div class="status" onclick="selectStatus('Silver', 5000)">Silver(5 тыс руб)</div>
+                    <div class="status" onclick="selectStatus('Обычный', 2000)">Обычный(2 тыс руб)</div>
+                </div>
+
+                <div class="section">
+                    <div class="zakaz_text">Матч:</div>
+                    <div class="match" onclick="selectMatch('Полуфинал Россия : Америка')">Полуфинал Россия : Америка</div>
+                    <div class="match" onclick="selectMatch('Полуфинал Бразилия : Ост.Мир')">Полуфинал Бразилия : Ост. Мир</div>
+                    <div class="match" onclick="selectMatch('Финал')">Финал</div>
+                </div>
+
+                <div class="section">
+                    <div class="zakaz_text">Количество:</div>
+                    <div class="kolichestvo" onclick="selectkolichestvo(1)">1</div>
+                    <div class="kolichestvo" onclick="selectkolichestvo(2)">2</div>
+                    <div class="kolichestvo" onclick="selectkolichestvo(3)">3</div>
+                    <div class="kolichestvo" onclick="selectkolichestvo(4)">4</div>
+                </div>
+
+                <div class="summary">
+                    <div id="ticket-info" class="ticket-info">Информация о билетах: нет данных</div>
+                    <div id="total-cost" class="total-cost">Общая стоимость: 0 руб.</div>
+                    <button id="download-ticket" onclick="downloadTicket()">Скачать билет</button>
+                </div>
+            </div>
+        </div>
+        <div class="Logo">
+            <img src="kartinki/luzhniki-stadium-navigation-13.png" class="Logo3" />
+        </div>
+    </main>
+    <div class="btn-up btn-up_hide"></div>
+    <footer>
+        <img src="kartinki/telegram.png" class="footer_1" onclick="window.location.href='https://web.telegram.org/a/';"/>
+        <img src="kartinki/dzen.png" class="footer_1" onclick="window.location.href='https://dzen.ru/?utm_referrer=www.yandex.ru';"/>
+        <img src="kartinki/youtube.png" class="footer_1" onclick="window.location.href='https://www.youtube.com/';"/>
+        <img src="kartinki/ok.png" class="footer_1" onclick="window.location.href='https://ok.ru/';"/>
+        <img src="kartinki/vk.png" class="footer_1" onclick="window.location.href='https://vk.com/?u=2&to=L2FsX2ZlZWQucGhw';"/>
+    </footer>
+
+    <script src="script_bilety.js"></script>
+    <script src="script_knopka_vverkh.js"></script>
+</body>
+</html>
