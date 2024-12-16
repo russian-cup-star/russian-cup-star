@@ -1,0 +1,170 @@
+body {
+    background: white;
+}
+@font-face {
+    font-family: 'Arsenal' ;
+    font-weight: bold;
+    src: url(Fonts/Arsenal_SC/ArsenalSC-Regular.ttf);
+}
+.red_header {
+    display: flex;
+    align-items: flex-start;
+    background: #8f1616;
+}
+.Logo1 {
+    flex: 0 0 auto;
+    width: 184px;
+    background: url("/foto/Logo_sorev.png");
+}
+.Logo2 {
+    width: 100%;;
+    height: 142px;
+    object-fit: cover;
+}
+.text_shapka {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.nazvanie {
+    margin: 0;
+    margin-left: -210px;
+    font: 400 40px 'Arsenal';
+    color: white;
+}
+.zagolovki {
+    display: flex;
+    gap: 196px;
+    padding-right: 214px;
+    margin-top: 29px;
+}
+button {
+    display: flex;
+    padding: 10px 20px;    
+    background: #740000;    
+    border: none;           
+    border-radius: 15px;   
+    color: white;           
+    font: 400 24px 'Arsenal'; 
+    cursor: pointer;        
+    transition: background 0.3s; 
+}
+button:hover {
+    background: #66BB6A; 
+}
+.lenta {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding-right: 17px;
+    background: #212327;
+}
+.lenta1 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90px;
+    padding-top: 13px;
+}
+.lenta2 {
+    margin: 0;
+    font: 400 40px 'Arsenal';
+    color: white;
+}
+.lenta3 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding-right: 17px;
+    background: #C9C200;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    background: #e1c8c8;
+}
+.igroki {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.igroki_foto {
+    display: flex;
+    padding-top: 23px;
+    padding-bottom: 10px;
+}
+.profile_foto {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    padding-right: 50px;
+}
+.foto {
+    display: block;
+    height: 200px;
+    border-radius: 30px;
+}
+.profile_foto1 {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+.surname {
+    margin-top: 20px;
+    text-align: center;
+    font: 400 24px 'Arsenal';
+    color: black;
+}
+.igroki_1 {
+    display: flex;
+    margin-top: 11px;
+    margin-left: -14px;
+}
+footer {
+    box-sizing: border-box;
+    display: flex;
+    gap: 215px;
+    justify-content: center;
+    padding-top: 56px;
+    padding-bottom: 59px;
+    padding-left: 25px;
+    background: #8f1616;
+}
+.footer_1 {
+    width: 63px;
+}
+.btn-up{
+    position: fixed;
+    background-color: #67E00A;
+    right: 20px;
+    bottom: 0px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 120px;
+}
+
+.btn-up::before {
+    content: "";
+    width: 80px;
+    height: 80px;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/%3E%3C/svg%3E");
+}
+
+.btn-up_hide {
+    display: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .btn-up:hover {
+      background-color: #106605;
+    }
+}
